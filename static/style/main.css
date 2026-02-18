@@ -3,10 +3,18 @@
     --primary-color: oklch(0.6684 0.139 131.97);
     --secondary-color: oklch(0.8361 0.1664 82.47);
 
+    --primary-color-button: oklch(0.94 0.099 128.78);
+    --primary-color-button-text: oklch(0.4265 0.0824 131.97);
+    --button-highlighted-gradient-alt: oklch(0.7652 0.1771 51.3);
+    --button-highlighted-background: oklch(0.9386 0.0631 84.4);
+    --button-hover-background: oklch(0.90 0.0953 84.4);
+    --button-clicked-background: oklch(0.5616 0.0885 51.3);
+    --button-highlighted-gradient: linear-gradient(300deg, var(--secondary-color), var(--button-highlighted-gradient-alt));
+
     --fundecor-navy: oklch(0.3518 0.0714 235.95);
     --light-blue: oklch(0.7693 0.0766 228.63);
     --navy-gradient-alt: oklch(0.4289 0.099 274.75);
-    --navy-gradient: linear-gradient(to top, var(--fundecor-navy), var(--navy-gradient-alt));
+    --navy-gradient: linear-gradient(50deg, var(--fundecor-navy), var(--navy-gradient-alt));
 }
 
 html {
@@ -20,23 +28,30 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    font-family: "Source Sans 3", sans-serif;
     color: var(--off-white)
 }
 
-/* -------- Text Styling -------- */
+video { /* TODO: THIS IS NOT EQUIPPED FOR PORTRAIT VIEW */
+    height: 35vh;
+    margin: 1rem;
+    margin-top: 0.5rem;
+    border: 0.5rem solid var(--secondary-color);
+    border-radius: 0.25rem;
+}
 
+/* -------- Text Styling -------- */
 h1 {
     font-size: xx-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     color: var(--off-white);
     width: fit-content;
 }
 
 h2 {
     font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     color: var(--off-white);
     width: fit-content;
 }
@@ -44,13 +59,34 @@ h2 {
 p {
     font-size: 16px;
     font-weight: 600;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     text-indent: 2em;
     width:fit-content;
 }
 
 a {
     color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding-left: 0.5rem;
+    position: relative;
+}
+
+li::before {
+    font-weight: 900;
+    content: "↪";
+    position: absolute;
+    left: 0.5rem;
+}
+
+.emphasis {
+    font-weight: initial + 200;
 }
 
 /* END BASE ELEMENT STYLING */
@@ -85,7 +121,17 @@ a {
 }
 
 .secondary {
+    color: var(--fundecor-navy);
     background-color: var(--secondary-color);
+}
+
+.secondary h1, .secondary p {
+    font-weight: 800;
+    color: var(--fundecor-navy);
+}
+
+.secondary a {
+    color: var(--navy-gradient-alt);
 }
 
 .tiertiary {
@@ -100,12 +146,8 @@ a {
     background-color: var(--off-white);
 }
 
-.background p {
-    color: black;
-}
-
-.background h1 {
-    color: black;
+.background p, .background h1 {
+    color: var(--fundecor-navy);
 }
 
 .container h1:first-of-type {
@@ -131,7 +173,7 @@ a {
 
 .column-left,
 .column-right {
-    flex: 1; /* Each takes 50% */
+    flex: 0 0 50%; /* flex-grow: 0, flex-shrink: 0, flex-basis: 50% */
 }
 /* END GENERAL CONTAINER STYLES */
 
@@ -151,6 +193,13 @@ a {
     margin-bottom: 2.25rem;
     gap: 6rem;
 }
+
+.meet-the-team-info {
+    max-width: 50vw;
+}
+
+.meet-the-team-info p { font-size: larger; }
+.meet-the-team-info h2 { font-size: xx-large; margin-bottom: 0rem;}
 
 .meet-the-team img {
     height:25rem;
@@ -197,6 +246,7 @@ a {
     border-radius: 2rem;
     scroll-snap-align: start;
     flex-shrink: 0;
+    /* box-shadow: 0 0 10px oklch(0% 0 0 / 20%); */
 }
 
 .slide-wrapper:last-child {
@@ -219,9 +269,60 @@ a {
 }
 /* END SLIDESHOW CONTAINER STYLES */
 
-/* || BUTTON STYLING
-    Made these for the slideshow but might find use elsewhere.
-*/
+/* || BUTTON STYLING */
+.button {
+    font-weight: 700;
+    font-size: xx-large;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--primary-color-button-text);
+
+    background-color: var(--button-highlighted-background);
+    color: var(--secondary-color);
+    border-image: var(--button-highlighted-gradient) 1;
+    border-width: 0.4rem;
+    border-style: solid;
+    box-shadow: 0 0 10px oklch(0% 0 0 / 10%) inset, 0 0 12px oklch(0% 0 0 / 20%);
+
+    cursor: pointer;
+    padding: 10px 20px;
+    
+    justify-content: center;
+    display: flex;
+    max-width: fit-content;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button:hover {
+    background-color: var(--button-hover-background);
+    color: var(--secondary-color);
+    border-image: var(--button-highlighted-gradient) 1;
+    border-width: 0.4rem;
+    border-style: solid;
+    box-shadow: 0 0 14px oklch(0% 0 0 / 20%) inset, 0 0 12px oklch(0% 0 0 / 25%);
+
+    transition: background-color 0.15s, box-shadow 0,15s;
+}
+
+.button .button-text {
+    background: var(--button-highlighted-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button:active {
+    background-color: var(--button-clicked-background);
+    color: var(--secondary-color);
+    border-image: var(--button-highlighted-gradient) 1;
+    border-width: 0.4rem;
+    border-style: solid;
+    box-shadow: 0 0 14px oklch(0% 0 0 / 40%) inset, 0 0 12px oklch(0% 0 0 / 20%);
+}
+
 /*  The SELECTOR class describes the dots used for things such as selecting images in slideshows. 
     State is tracked with button.js to apply highlighting / image focus
 */

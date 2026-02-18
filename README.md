@@ -1,6 +1,6 @@
 # Fundecor Landing Page
 <p>
-Landing page for FUNDECOR Educational Travel Experiences.
+You are reading the ReadMe description for the landing page for FUNDECOR Educational Travel Experiences.
 
 The primary FUNDECOR website can be found at [fundecor.org](https://www.fundecor.org/)
 
@@ -13,10 +13,15 @@ This site runs using static HTML/CSS/JavaScript and should not require any furth
 - CSS class structure is set up such that several distinct classes are used to apply different styling which appears more commonly. For example:
     - A navy container with centered content organized in a column would be styled as `class="tiertiary container centered flex-row"`
     - An active `Selector` would be styled as `class="selector active"` 
+    - However, an element which is more specialized in use will be applied more singularly, e.g. `class="container meet-the-team"` or `class="logo-image"`
+    - For a full description of the preset variables used in CSS styling, view the
+- This webpage uses the OKLCH colorspace and standard with most colors taken from sRGB IEC 61966-2-1 sources of FUNDECOR's color scheme, and some other custom colors made within the OKLCH space. This decision was made due to the higher visual acuity and ability to display high-gammut colors more accurately. OKLCH has seen widespread adoption across popular browser vendors and should be supported on most devices, but if not CSS should automatically use an sRGB fallback. This page does not use any P3 colors, but if the decision is made in the future to use them, an sRGB fallback is automatically generated. For more information on OKLCH, visit the [MDN Pages for its web implementation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklch).
 </p>
 
 --- 
-#### CSS Variables List:
+#### CSS Variables List: { #CSSList }
+
+If you're reading this you're a developer and already know what this is, but just in case, these are variables defined in `:root` to be used with `var()`, e.g. `var(--fundecor-navy)` will set the color of the element the rule is defined on to be the OKLCH value for Fundecor Navy.
 
 | Syntax      | Description |
 | ----------- | ----------- |
