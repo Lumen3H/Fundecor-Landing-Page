@@ -47,5 +47,4 @@ function startAutoplay(delay = autoplayDelay) {
   }, delay);
 }
 
-// Start autoplay
 startAutoplay();

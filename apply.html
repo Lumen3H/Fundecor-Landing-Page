@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <!-- prettier-ignore-start -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>International Experiences</title>
+        <link rel="stylesheet" href="static/style/main.css" />
+        <link rel="stylesheet" href="static/style/markdown.css" />
+        <link rel="icon" type="image/svg+xml" href="static/resources/hotlsite_icon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+        <!-- prettier-ignore-end -->
+    </head>
+    <body>
+        <div class="tiertiary container flex-row">
+            <img class="logo-image" alt="FUNDECOR Logo" src="static/img/resources/logo_color_white_text.png" />
+            <h1 class="logo">EDUCATIONAL TRAVEL EXPERIENCES</h1>
+        </div>
+        <form action="submit-form.php" method="POST">
+            <label>
+                Name:
+                <input type="text" name="name" required />
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email" required />
+            </label>
+            <label>
+                Message:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </body>
+</html>

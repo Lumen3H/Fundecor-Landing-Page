@@ -7,14 +7,17 @@
     --primary-color-button-text: oklch(0.4265 0.0824 131.97);
     --button-highlighted-gradient-alt: oklch(0.7652 0.1771 51.3);
     --button-highlighted-background: oklch(0.9386 0.0631 84.4);
-    --button-hover-background: oklch(0.90 0.0953 84.4);
+    --button-hover-background: oklch(0.9 0.0953 84.4);
     --button-clicked-background: oklch(0.5616 0.0885 51.3);
     --button-highlighted-gradient: linear-gradient(300deg, var(--secondary-color), var(--button-highlighted-gradient-alt));
 
     --fundecor-navy: oklch(0.3518 0.0714 235.95);
     --light-blue: oklch(0.7693 0.0766 228.63);
+    --pale-blue: oklch(0.8693 0.0366 228.63);
     --navy-gradient-alt: oklch(0.4289 0.099 274.75);
+    --navy-gradient-alt-light: oklch(0.6289 0.099 274.75);
     --navy-gradient: linear-gradient(50deg, var(--fundecor-navy), var(--navy-gradient-alt));
+    --navy-gradient-light: linear-gradient(50deg, var(--navy-gradient-alt), var(--navy-gradient-alt-light));
 }
 
 html {
@@ -28,12 +31,13 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    
-    font-family: "Source Sans 3", sans-serif;
-    color: var(--off-white)
+
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--off-white);
 }
 
-video { /* TODO: THIS IS NOT EQUIPPED FOR PORTRAIT VIEW */
+video {
+    /* TODO: THIS IS NOT EQUIPPED FOR PORTRAIT VIEW */
     height: 35vh;
     margin: 1rem;
     margin-top: 0.5rem;
@@ -44,14 +48,14 @@ video { /* TODO: THIS IS NOT EQUIPPED FOR PORTRAIT VIEW */
 /* -------- Text Styling -------- */
 h1 {
     font-size: xx-large;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     color: var(--off-white);
     width: fit-content;
 }
 
 h2 {
     font-size: x-large;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     color: var(--off-white);
     width: fit-content;
 }
@@ -59,9 +63,9 @@ h2 {
 p {
     font-size: 16px;
     font-weight: 600;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     text-indent: 2em;
-    width:fit-content;
+    width: fit-content;
 }
 
 a {
@@ -80,7 +84,7 @@ li {
 
 li::before {
     font-weight: 900;
-    content: "↪";
+    content: '↪';
     position: absolute;
     left: 0.5rem;
 }
@@ -125,7 +129,8 @@ li::before {
     background-color: var(--secondary-color);
 }
 
-.secondary h1, .secondary p {
+.secondary h1,
+.secondary p {
     font-weight: 800;
     color: var(--fundecor-navy);
 }
@@ -146,7 +151,8 @@ li::before {
     background-color: var(--off-white);
 }
 
-.background p, .background h1 {
+.background p,
+.background h1 {
     color: var(--fundecor-navy);
 }
 
@@ -184,7 +190,9 @@ li::before {
     padding: 0rem;
 }
 
-.meet-the-team { /* TODO! THIS ONLY SUPPORTS LANDSCAPE! */
+/* Meet the team section */
+.meet-the-team {
+    /* TODO! THIS ONLY SUPPORTS LANDSCAPE! */
     background-color: var(--primary-color);
     display: flex;
     height: fit-content;
@@ -194,20 +202,32 @@ li::before {
     gap: 6rem;
 }
 
+.meet-the-team h1 {
+    color: var(--secondary-color);
+    font-size: x-large;
+}
+
 .meet-the-team-info {
     max-width: 50vw;
 }
 
-.meet-the-team-info p { font-size: larger; }
-.meet-the-team-info h2 { font-size: xx-large; margin-bottom: 0rem;}
+.meet-the-team-info p {
+    font-size: larger;
+    text-indent: 0;
+}
+.meet-the-team-info h2 {
+    font-size: xx-large;
+    margin-bottom: 0rem;
+}
 
 .meet-the-team img {
-    height:25rem;
+    height: 20rem;
     border: 0.25rem solid var(--fundecor-navy);
     border-radius: 0.25rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     margin-left: 1rem;
 }
+/* End meet the team section */
 /* END SINGULAR STYLE THINGS */
 
 /* || SLIDESHOW CONTAINER STYLES */
@@ -223,7 +243,7 @@ li::before {
     display: flex;
     overflow-x: hidden;
     white-space: nowrap;
-    flex-direction:row;
+    flex-direction: row;
 
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
@@ -239,7 +259,7 @@ li::before {
 .slideshow-container::-webkit-scrollbar {
     display: none;
 }
-  
+
 .slide-wrapper {
     padding: 0.5rem;
     background: var(--navy-gradient);
@@ -282,11 +302,13 @@ li::before {
     border-image: var(--button-highlighted-gradient) 1;
     border-width: 0.4rem;
     border-style: solid;
-    box-shadow: 0 0 10px oklch(0% 0 0 / 10%) inset, 0 0 12px oklch(0% 0 0 / 20%);
+    box-shadow:
+        0 0 10px oklch(0% 0 0 / 10%) inset,
+        0 0 12px oklch(0% 0 0 / 20%);
 
     cursor: pointer;
     padding: 10px 20px;
-    
+
     justify-content: center;
     display: flex;
     max-width: fit-content;
@@ -302,9 +324,14 @@ li::before {
     border-image: var(--button-highlighted-gradient) 1;
     border-width: 0.4rem;
     border-style: solid;
-    box-shadow: 0 0 14px oklch(0% 0 0 / 20%) inset, 0 0 12px oklch(0% 0 0 / 25%);
+    box-shadow:
+        0 0 14px oklch(0% 0 0 / 20%) inset,
+        0 0 12px oklch(0% 0 0 / 25%);
 
-    transition: background-color 0.15s, box-shadow 0,15s;
+    transition:
+        background-color 0.15s,
+        box-shadow 0,
+        15s;
 }
 
 .button .button-text {
@@ -320,7 +347,27 @@ li::before {
     border-image: var(--button-highlighted-gradient) 1;
     border-width: 0.4rem;
     border-style: solid;
-    box-shadow: 0 0 14px oklch(0% 0 0 / 40%) inset, 0 0 12px oklch(0% 0 0 / 20%);
+    box-shadow:
+        0 0 14px oklch(0% 0 0 / 40%) inset,
+        0 0 12px oklch(0% 0 0 / 20%);
+}
+
+.alt-button-colors {
+    background-color: var(--light-blue);
+    color: var(--fundecor-navy);
+    border-image: var(--navy-gradient) 1;
+}
+
+.alt-button-colors:hover {
+    background-color: var(--pale-blue);
+    color: var(--fundecor-navy);
+    border-image: var(--navy-gradient-light) 1;
+}
+
+.alt-button-colors:active {
+    background-color: var(--primary-color);
+    color: var(--fundecor-navy);
+    border-image: var(--navy-gradient) 1;
 }
 
 /*  The SELECTOR class describes the dots used for things such as selecting images in slideshows. 
@@ -339,7 +386,7 @@ li::before {
     padding: 1vw;
     text-decoration: none;
     justify-content: center;
-    
+
     display: flex;
     width: 1vw;
     height: 1vw;
@@ -351,13 +398,14 @@ li::before {
     border: 2px solid var(--secondary-color);
 }
 
-.selector-container { /* TODO! This is redundant and should be swapped to using the utility classes */
+.selector-container {
+    /* TODO! This is redundant and should be swapped to using the utility classes */
     display: flex;
     flex-direction: row;
     width: 100vw;
     max-width: 100vw;
     justify-content: center;
-    gap: 3vw; 
+    gap: 3vw;
     padding: 1vw 0vw;
     margin: none;
 
