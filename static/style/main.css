@@ -190,6 +190,35 @@ li::before {
     padding: 0rem;
 }
 
+/* Form styling */
+form {
+    gap: 1vh;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+label {
+    color: var(--fundecor-navy);
+    font-weight: bold;
+    padding-top: 3rem;
+}
+
+form input {
+    /* TODO! This is not set up for mobile */
+    max-width: 40vw;
+}
+
+form textarea {
+    max-width: 60vw;
+    /* For some reason if you don't specify the font here as well it uses the browser fallback one. idk */
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+form button {
+    font-weight: bold;
+    max-width: fit-content;
+    padding: 0.5vh 1vw;
+}
+
 /* Meet the team section */
 .meet-the-team {
     /* TODO! THIS ONLY SUPPORTS LANDSCAPE! */

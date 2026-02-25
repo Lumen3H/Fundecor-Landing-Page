@@ -25,7 +25,7 @@ The main site runs using static HTML/CSS/JavaScript and should not require any f
 If you're reading this you're a developer and already know what this is, but just in case, these are variables defined in `:root` to be used with `var()`, e.g. `var(--fundecor-navy)` will set the color of the element the rule is defined on to be the OKLCH value for Fundecor Navy.
 
 | Syntax                 | Description                                                |
-| ---------------------- | ---------------------------------------------------------- |
+|------------------------|------------------------------------------------------------|
 | `off-white`            | A subtle off-white color used for backgrounds              |
 | `primary-color`        | FUNDECOR Green                                             |
 | `secondary-color`      | FUNDECOR Yellow                                            |
