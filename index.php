@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <!-- prettier-ignore-start -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>International Experiences</title>
+        <link rel="stylesheet" href="static/style/main.css" />
+        <link rel="stylesheet" href="static/style/markdown.css" />
+        <link rel="icon" type="image/svg+xml" href="static/resources/hotlsite_icon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+        <!-- prettier-ignore-end -->
+    </head>
+    <body>
+        <!-- PHP GENERATES HEADER FROM HEADER-BAR.PHP -->
+        <?php include 'header-bar.php'; ?>
+
+        <!-- this is just a margin for the top of the slideshow -->
+        <div class="primary container"></div>
+        
+        <div class="slideshow-container-bounds">
+            <div class="slideshow-container">
+                <div id="a0" class="slide-wrapper leftmost-slide">
+                    <img class="slideshow-card" src="static/img/home-slideshow/FUNDECOR_teampic.png" loading="eager" />
+                </div>
+                <div id="a1" class="slide-wrapper">
+                    <img class="slideshow-card" src="static/img/home-slideshow/fieldwork.jpg" loading="eager" />
+                </div>
+                <div id="a2" class="slide-wrapper">
+                    <img class="slideshow-card" src="static/img/home-slideshow/la_casa.webp" loading="eager" />
+                </div>
+                <div id="a3" class="slide-wrapper">
+                    <img class="slideshow-card" src="static/img/home-slideshow/the_goat.webp" loading="eager" />
+                </div>
+                <div id="a4" class="slide-wrapper">
+                    <img class="slideshow-card" src="static/img/home-slideshow/educacion.webp" loading="eager" />
+                </div>
+                <div id="a5" class="slide-wrapper">
+                    <img class="slideshow-card" src="static/img/home-slideshow/gordon_the_explainer.webp" loading="eager" />
+                </div>
+            </div>
+        </div>
+        <div class="selector-container">
+            <button data-slide="a0" class="selector active"></button>
+            <button data-slide="a1" class="selector"></button>
+            <button data-slide="a2" class="selector"></button>
+            <button data-slide="a3" class="selector"></button>
+            <button data-slide="a4" class="selector"></button>
+            <button data-slide="a5" class="selector"></button>
+        </div>
+
+        <div class="two-column-section">
+            <div class="column-left">
+                <div class="secondary container">
+                    <h1>OFFERINGS</h1>
+                    <ul>
+                        <li><p>Hands-On Experience with Seasoned Professionals</p></li>
+                        <li><p>Venture into the lush rainforests of Costa Rica</p></li>
+                        <li><p>Become immersed in Costa Rica's vibrant culture</p></li>
+                    </ul>
+                    <h1>Already know you're interested?</h1>
+                    <a class="button alt-button-colors" href="apply.php">GO AND APPLY</a>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="background container flex-row centered-content">
+                    <video autoplay loop="true" controls="true">
+                        <source src="static/img/resources/placeholder_video.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="two-column-section">
+            <div class="column-left">
+                <div class="background container">
+                    <h1>HEAR FROM STUDENTS</h1>
+                    <video autoplay loop="true" controls="true">
+                        <source src="static/img/resources/placeholder_video.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="tiertiary container">
+                    <h1>ABOUT OUR EDUCATIONAL TRAVEL EXPERIENCES</h1>
+                    <p>
+                        FUNDECOR, or the
+                        <a href="https://www.fundecor.org/">Foundation for the Development of the Central Volcanic Mountain Range</a>
+                        (Fundación para el Desarrollo de la Cordillera Volcánica Central) is a Non-Governmental Ecology and Sustainability
+                        Organization which handles core operations for the ecological protection, education, research, and sustainability efforts in
+                        Costa Rica.
+                    </p>
+                    <p>
+                        FUNDECOR has a diverse team of experts in each of these fields, with specialists ranging from Geology to Forestry to
+                        Ornithology, and
+                        <a href="#applynow">we want to work with YOU</a>
+                        in educating the world in how to protect our heart and soul: Mother Nature.
+                    </p>
+                    <p>
+                        This program works differently from a typical study abroad in that the program is designed specifically to fit to your group’s
+                        needs and interests. FUNDECOR guides will take you to national parks, museums, local communities, and more while demonstrating the
+                        fieldwork that they do everyday to support the people and the environment. FUDECOR offers opportunities for volunteer work and
+                        research, as well as interactive classroom settings for professors to teach classes. 
+                    </p>
+                    <p>
+                        FUNDECOR’s program has everything you need from housing and transportation to climate change monitoring systems available for your use. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="primary container">
+            <div class="flex-column centered-content">
+                <h1 class="meet-the-team" style="margin-top:4rem">MEET SOME OF OUR TEAM MEMBERS</h1>
+                <div class="container meet-the-team">
+                    <img src="static/img/meet-the-team/fede.jpg" />
+                    <div class="flex-column meet-the-team-info">
+                        <h2>FEDERICO</h2>
+                        <p>
+                            Federico runs the education program at FUNDECOR. He started out as a tour guide for other companies and was recruited to
+                            FUNDECOR in order to be a part of the program. He specialized in history but has a vast knowledge of Costa Rica’s natural
+                            life as well.
+                        </p>
+                    </div>
+                </div>
+                <div class="container meet-the-team">
+                    <img src="static/img/meet-the-team/manuel.jpg" />
+                    <div class="flex-column meet-the-team-info">
+                        <h2>MANUEL</h2>
+                        <p>
+                            Manuel is a biologist and water resource specialist who has worked with the education program and Agua Tica over his 25
+                            years working here. He is knowledgeable about a wide range of topics including geology. He has been a tour guide for many
+                            field trips and loves sharing his expertise with the kids.
+                        </p>
+                    </div>
+                </div>
+                <div class="container meet-the-team">
+                    <img src="static/img/meet-the-team/pedro.jpg" />
+                    <div class="flex-column meet-the-team-info">
+                        <h2>PEDRO</h2>
+                        <p>
+                            Pedro is the manager of Innovation and business at FUNDECOR. He has worked with many of the forestry projects both as a
+                            forest engineer and as a manager. He also focuses on climate change. He works with student groups on sustainable farming
+                            and forest management practices.
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container tiertiary-bright">
+            <h1>PAST PARTNERS</h1>
+            <div>
+                <img class="logo-image" src="static/img/partners/FIU_Logo.png" alt="Florida International University" />
+                <img class="logo-image" src="static/img/partners/wwf_logo.webp" alt="WWF" />
+                <img class="logo-image" src="static/img/partners/University_of_Michigan_Logo.webp" alt="University of Michigan" />
+                <img class="logo-image" src="static/img/partners/cornell_college_logo.webp" alt="Florida International University" />
+                <img class="logo-image" src="static/img/partners/IUCN.webp" alt="WWF" />
+                <img class="logo-image" src="static/img/partners/university_of_toronto_logo.webp" alt="University of Michigan" />
+            </div>
+            <p></p>
+        </div>
+
+        <div class="secondary container">
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <p>Q: Can I go there? A: Yes.</p>
+            <p>Q: Who am I? A: IDK.</p>
+            <p>Q: Another item? A: Yup. Another one</p>
+        </div>
+
+        <div id="applynow" class="container background centered-content flex-row emphasis" style="gap: 3rem; justify-content: space-around">
+            <h1 style="margin-left: 5rem">INTERESTED? TALK TO US TODAY!</h1>
+            <a class="button" style="margin-right: 12rem" href="apply.php"><span class="button-text">CONTACT US</span></a>
+        </div>
+
+        <!-- KEEP THIS AT THE BOTTOM! -->
+        <?php include 'footer-bar.php'; ?>
+        <!-- Scripts -->
+        <script src="button.js"></script>
+        <script>
+            window.scrollTo(0, 0)
+        </script>
+    </body>
+</html>

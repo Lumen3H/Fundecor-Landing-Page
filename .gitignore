@@ -1,2 +1,3 @@
 #prevent raw image files from being sent to the github and taking a billion gigs of storage
 static/img/raw/
+node_modules/

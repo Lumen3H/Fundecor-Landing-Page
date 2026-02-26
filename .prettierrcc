@@ -6,5 +6,8 @@
     "singleQuote": true,
     "bracketSameLine": true,
     "htmlWhitespaceSensitivity": "ignore",
-    "singleAttributePerLine": false
+    "singleAttributePerLine": false,
+    "plugins": [
+        "@prettier/plugin-php"
+    ]
 }
