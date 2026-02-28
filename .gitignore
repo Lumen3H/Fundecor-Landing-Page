@@ -1,3 +1,6 @@
 #prevent raw image files from being sent to the github and taking a billion gigs of storage
 static/img/raw/
+static/img/video
 node_modules/
+package-lock.json
+package.json

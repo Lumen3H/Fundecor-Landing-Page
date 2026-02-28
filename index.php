@@ -20,7 +20,7 @@
 
         <!-- this is just a margin for the top of the slideshow -->
         <div class="primary container"></div>
-        
+
         <div class="slideshow-container-bounds">
             <div class="slideshow-container">
                 <div id="a0" class="slide-wrapper leftmost-slide">
@@ -67,8 +67,8 @@
             </div>
             <div class="column-right">
                 <div class="background container flex-row centered-content">
-                    <video autoplay loop="true" controls="true">
-                        <source src="static/img/resources/placeholder_video.mp4" type="video/mp4" />
+                    <video loop="false" controls="true">
+                        <source src="static/img/video/promovid1.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>
@@ -103,10 +103,10 @@
                         This program works differently from a typical study abroad in that the program is designed specifically to fit to your group’s
                         needs and interests. FUNDECOR guides will take you to national parks, museums, local communities, and more while demonstrating the
                         fieldwork that they do everyday to support the people and the environment. FUDECOR offers opportunities for volunteer work and
-                        research, as well as interactive classroom settings for professors to teach classes. 
+                        research, as well as interactive classroom settings for professors to teach classes.
                     </p>
                     <p>
-                        FUNDECOR’s program has everything you need from housing and transportation to climate change monitoring systems available for your use. 
+                        FUNDECOR’s program has everything you need from housing and transportation to climate change monitoring systems available for your use.
                     </p>
                 </div>
             </div>
@@ -165,11 +165,69 @@
             <p></p>
         </div>
 
-        <div class="secondary container">
+        <div class="secondary container faq">
             <h1>FREQUENTLY ASKED QUESTIONS</h1>
-            <p>Q: Can I go there? A: Yes.</p>
-            <p>Q: Who am I? A: IDK.</p>
-            <p>Q: Another item? A: Yup. Another one</p>
+            <div class="faq-box">
+                <ul>
+                    <li>
+                        <p>
+                            Is this a study abroad program?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            No. FUNDECOR’s guides, while they are experts, do not have teaching certifications
+                            and this program is meant to supplement existing classes or to provide field trips and
+                            research permissions.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq-box">
+                <ul>
+                    <li>
+                        <p>
+                            What does Fundecor provide?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            (See full list of resources)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq-box">
+                <ul>
+                    <li>
+                        <p>
+                            Does Fundecor have set programs?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            No. FUNDECOR designs all their programs around your needs and interests, only teaching what you want
+                            to learn and only going to places you want to go
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq-box">
+                <p>
+                    Q: How much does the program cost?
+                </p>
+                <p>
+                    A: Pricing is determined by the specifics of your journey. Contact us for a quote!
+                </p>
+            </div>
+            <div class="faq-box">
+                <p>
+                    Q: How long is the program?
+                </p>
+                <p>
+                    A: Since the program is designed for your needs, it can be as long or as short as you desire!
+                </p>
+            </div>
         </div>
 
         <div id="applynow" class="container background centered-content flex-row emphasis" style="gap: 3rem; justify-content: space-around">

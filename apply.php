@@ -34,6 +34,9 @@
                 </form>
             </div>
         </div>
+        <div class="background container flex-row" style="justify-content: right">
+            <a href="view-applications.php" style="color: var(--fundecor-navy)">Admin Portal</a>
+        </div>
 
         <?php include 'footer-bar.php'; ?>
     </body>

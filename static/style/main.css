@@ -261,6 +261,54 @@ form button {
     margin-left: 1rem;
 }
 /* End meet the team section */
+/* FAQ section */
+.faq-box {
+    width: 90vw;
+    background-color: var(--fundecor-navy);
+    max-width: 90vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.faq-box p {
+    font-size: medium;
+    text-indent: 0px;
+    color: var(--off-white);
+}
+
+.faq-box p:first-child {
+    font-size: larger;
+    text-indent: 0px;
+    color: var(--off-white);
+}
+
+.faq-box ul {
+    list-style-type: none;
+}
+
+.faq-box li:nth-child(odd) {
+    list-style-type: 'Q:';
+}
+
+.faq-box li:nth-child(even) {
+    list-style-type: 'A:';
+}
+/* End FAQ section */
+
+.submission-card {
+    display: flex;
+    background-color: var(--off-white);
+    color: var(--fundecor-navy);
+    width: 80vw;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
 /* END SINGULAR STYLE THINGS */
 
 /* || SLIDESHOW CONTAINER STYLES */
