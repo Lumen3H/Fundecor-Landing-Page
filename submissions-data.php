@@ -13,11 +13,6 @@ Name: lana
 Email: lana@lana.lana
 Message: message text
 
-Date: 2026-02-28 20:27:55
-Name: john name
-Email: johnname@email.com
-Message: gonna have to sanitize these soon oops \n\n ineedyou\n\n
-
 Date: 2026-02-28 20:28:45
 Name: john name
 Email: johnname@email.com
@@ -42,4 +37,9 @@ Date: 2026-02-28 20:35:32
 Name: john name
 Email: johnname@email.com
 Message: gonna have to sanitize these soon oops
+
+Date: 2026-03-02 07:28:11
+Name: test
+Email: guy@email.com
+Message: lana
 

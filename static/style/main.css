@@ -38,7 +38,7 @@ body {
 
 video {
     /* TODO: THIS IS NOT EQUIPPED FOR PORTRAIT VIEW */
-    height: 35vh;
+    width: 90%;
     margin: 1rem;
     margin-top: 0.5rem;
     border: 0.5rem solid var(--secondary-color);
@@ -82,7 +82,7 @@ li {
     position: relative;
 }
 
-li::before {
+.list li::before {
     font-weight: 900;
     content: '↪';
     position: absolute;
@@ -263,26 +263,40 @@ form button {
 /* End meet the team section */
 /* FAQ section */
 .faq-box {
-    width: 90vw;
     background-color: var(--fundecor-navy);
+    position: relative;
+
+    width: 90vw;
     max-width: 90vw;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
     margin: 1rem;
+
     border-radius: 1rem;
+    border-width: 2px;
+    z-index: 1;
+}
+
+.faq-box::before {
+    content: '';
+    position: relative;
+    inset: -3px; /* controls border thickness */
+    border-radius: inherit;
+    background-image: var(--button-highlighted-gradient);
+    z-index: -1;
 }
 
 .faq-box p {
     font-size: medium;
-    text-indent: 0px;
     color: var(--off-white);
+    text-indent: 0px;
+    margin-left: 2rem;
 }
 
 .faq-box p:first-child {
     font-size: larger;
-    text-indent: 0px;
     color: var(--off-white);
 }
 
@@ -290,12 +304,22 @@ form button {
     list-style-type: none;
 }
 
-.faq-box li:nth-child(odd) {
-    list-style-type: 'Q:';
+.faq-box li:nth-child(odd)::before {
+    color: var(--off-white);
+    font-size: large;
+    font-weight: 900;
+    content: 'Q:';
+    position: absolute;
+    left: 0.5rem;
 }
 
-.faq-box li:nth-child(even) {
-    list-style-type: 'A:';
+.faq-box li:nth-child(even)::before {
+    color: var(--off-white);
+    font-size: large;
+    font-weight: 900;
+    content: 'A:';
+    position: absolute;
+    left: 0.5rem;
 }
 /* End FAQ section */
 
@@ -307,6 +331,15 @@ form button {
     border-radius: 1rem;
     padding: 1rem;
     margin-bottom: 2rem;
+}
+
+.about {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.about p {
+    font-size: large;
 }
 
 /* END SINGULAR STYLE THINGS */

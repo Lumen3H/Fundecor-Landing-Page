@@ -56,7 +56,7 @@
             <div class="column-left">
                 <div class="secondary container">
                     <h1>OFFERINGS</h1>
-                    <ul>
+                    <ul class="list">
                         <li><p>Hands-On Experience with Seasoned Professionals</p></li>
                         <li><p>Venture into the lush rainforests of Costa Rica</p></li>
                         <li><p>Become immersed in Costa Rica's vibrant culture</p></li>
@@ -74,51 +74,36 @@
             </div>
         </div>
 
-        <div class="two-column-section">
-            <div class="column-left">
-                <div class="background container">
-                    <h1>HEAR FROM STUDENTS</h1>
-                    <video autoplay loop="true" controls="true">
-                        <source src="static/img/resources/placeholder_video.mp4" type="video/mp4" />
-                    </video>
-                </div>
-            </div>
-            <div class="column-right">
-                <div class="tiertiary container">
-                    <h1>ABOUT OUR EDUCATIONAL TRAVEL EXPERIENCES</h1>
-                    <p>
-                        FUNDECOR, or the
-                        <a href="https://www.fundecor.org/">Foundation for the Development of the Central Volcanic Mountain Range</a>
-                        (Fundación para el Desarrollo de la Cordillera Volcánica Central) is a Non-Governmental Ecology and Sustainability
-                        Organization which handles core operations for the ecological protection, education, research, and sustainability efforts in
-                        Costa Rica.
-                    </p>
-                    <p>
-                        FUNDECOR has a diverse team of experts in each of these fields, with specialists ranging from Geology to Forestry to
-                        Ornithology, and
-                        <a href="#applynow">we want to work with YOU</a>
-                        in educating the world in how to protect our heart and soul: Mother Nature.
-                    </p>
-                    <p>
-                        This program works differently from a typical study abroad in that the program is designed specifically to fit to your group’s
-                        needs and interests. FUNDECOR guides will take you to national parks, museums, local communities, and more while demonstrating the
-                        fieldwork that they do everyday to support the people and the environment. FUDECOR offers opportunities for volunteer work and
-                        research, as well as interactive classroom settings for professors to teach classes.
-                    </p>
-                    <p>
-                        FUNDECOR’s program has everything you need from housing and transportation to climate change monitoring systems available for your use.
-                    </p>
-                </div>
-            </div>
+        <div class="tiertiary container about centered-content flex-column" style="gap: 0.1rem; margin-top: 2rem">
+            <h1>ABOUT OUR EDUCATIONAL TRAVEL EXPERIENCES</h1>
+            <p>
+                FUNDECOR, or the
+                <a href="https://www.fundecor.org/">Foundation for the Development of the Central Volcanic Mountain Range</a>
+                (Fundación para el Desarrollo de la Cordillera Volcánica Central) is a Non-Governmental Ecology and Sustainability
+                Organization which handles core operations for the ecological protection, education, research, and sustainability efforts in
+                Costa Rica.
+            </p>
+            <p>
+                FUNDECOR has a diverse team of experts in each of these fields, with specialists ranging from Geology to Forestry to
+                Ornithology, and
+                <a href="#applynow">we want to work with YOU</a>
+                in educating the world in how to protect our heart and soul: Mother Nature.
+            </p>
+            <p>
+                This program works differently from a typical study abroad in that the program is designed specifically to fit to your group’s
+                needs and interests. FUNDECOR guides will take you to national parks, museums, local communities, and more while demonstrating the
+                fieldwork that they do everyday to support the people and the environment. FUDECOR offers opportunities for volunteer work and
+                research, as well as interactive classroom settings for professors to teach classes.
+            </p>
         </div>
 
         <div class="primary container">
             <div class="flex-column centered-content">
-                <h1 class="meet-the-team" style="margin-top:4rem">MEET SOME OF OUR TEAM MEMBERS</h1>
+                <h1 class="meet-the-team" style="margin-top:2rem">MEET SOME OF OUR TEAM MEMBERS</h1>
                 <div class="container meet-the-team">
                     <img src="static/img/meet-the-team/fede.jpg" />
                     <div class="flex-column meet-the-team-info">
-                        <h2>FEDERICO</h2>
+                        <h2>FEDERICO VARELA MORA</h2>
                         <p>
                             Federico runs the education program at FUNDECOR. He started out as a tour guide for other companies and was recruited to
                             FUNDECOR in order to be a part of the program. He specialized in history but has a vast knowledge of Costa Rica’s natural
@@ -129,7 +114,7 @@
                 <div class="container meet-the-team">
                     <img src="static/img/meet-the-team/manuel.jpg" />
                     <div class="flex-column meet-the-team-info">
-                        <h2>MANUEL</h2>
+                        <h2>MANUEL GUERRERO</h2>
                         <p>
                             Manuel is a biologist and water resource specialist who has worked with the education program and Agua Tica over his 25
                             years working here. He is knowledgeable about a wide range of topics including geology. He has been a tour guide for many
@@ -140,7 +125,7 @@
                 <div class="container meet-the-team">
                     <img src="static/img/meet-the-team/pedro.jpg" />
                     <div class="flex-column meet-the-team-info">
-                        <h2>PEDRO</h2>
+                        <h2>PEDRO ZUNIGA</h2>
                         <p>
                             Pedro is the manager of Innovation and business at FUNDECOR. He has worked with many of the forestry projects both as a
                             forest engineer and as a manager. He also focuses on climate change. He works with student groups on sustainable farming
@@ -152,20 +137,22 @@
             </div>
         </div>
 
-        <div class="container tiertiary-bright">
+        <div class="container tiertiary-bright centered-content flex-row">
             <h1>PAST PARTNERS</h1>
-            <div>
+            <div class="flex-row centered-content" style="flex-wrap: wrap">
                 <img class="logo-image" src="static/img/partners/FIU_Logo.png" alt="Florida International University" />
                 <img class="logo-image" src="static/img/partners/wwf_logo.webp" alt="WWF" />
                 <img class="logo-image" src="static/img/partners/University_of_Michigan_Logo.webp" alt="University of Michigan" />
                 <img class="logo-image" src="static/img/partners/cornell_college_logo.webp" alt="Florida International University" />
                 <img class="logo-image" src="static/img/partners/IUCN.webp" alt="WWF" />
                 <img class="logo-image" src="static/img/partners/university_of_toronto_logo.webp" alt="University of Michigan" />
+                <img class="logo-image" src="static/img/partners/agua-tica.webp" alt="Agua Tica">
+                <img class="logo-image" src="static/img/partners/UNA_logo.webp" alt="UNA">
             </div>
             <p></p>
         </div>
 
-        <div class="secondary container faq">
+        <div class="secondary container faq centered-content flex-column">
             <h1>FREQUENTLY ASKED QUESTIONS</h1>
             <div class="faq-box">
                 <ul>
@@ -213,20 +200,32 @@
                 </ul>
             </div>
             <div class="faq-box">
-                <p>
-                    Q: How much does the program cost?
-                </p>
-                <p>
-                    A: Pricing is determined by the specifics of your journey. Contact us for a quote!
-                </p>
+                <ul>
+                    <li>
+                        <p>
+                            How much does the program cost?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Pricing is determined by the specifics of your journey. Contact us for a quote!
+                        </p>
+                    </li>
+                </ul>
             </div>
             <div class="faq-box">
-                <p>
-                    Q: How long is the program?
-                </p>
-                <p>
-                    A: Since the program is designed for your needs, it can be as long or as short as you desire!
-                </p>
+                <ul>
+                    <li>
+                        <p>
+                            How long is the program?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Since the program is designed for your needs, it can be as long or as short as you desire!
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
 
