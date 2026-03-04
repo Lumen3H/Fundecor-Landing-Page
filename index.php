@@ -55,7 +55,7 @@
         <div class="two-column-section">
             <div class="column-left">
                 <div class="secondary container centered-content flex-column">
-                    <div style="margin-right: 4rem;">
+                    <div>
                         <h1 style="margin-top:0px;">OFFERINGS</h1>
                         <ul class="list">
                             <li><p>Hands-On Experience with Seasoned Professionals</p></li>
@@ -63,7 +63,7 @@
                             <li><p>Become immersed in Costa Rica's vibrant culture</p></li>
                         </ul>
                         <h1>Already know you're interested?</h1>
-                        <a class="button alt-button-colors" href="apply.php">GO AND APPLY</a>
+                        <a class="button alt-button-colors" href="apply.php">CONTACT US</a>
                     </div>
                 </div>
             </div>
@@ -76,32 +76,7 @@
             </div>
         </div>
 
-        <div class="two-column-section">
-            <div class="column-left">
-                <div class="container background flex-row" style="gap: 2rem; padding-left: 4rem;">
-                    <div style="position: relative; width: 50%; height: auto; padding-top: 60%;
-                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-                    border-radius: 8px; will-change: transform;">
-                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                            src="https://www.canva.com/design/DAHBtwoUr9E/u-bA4UHge_yx_GK_I02xng/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-                        </iframe>
-                    </div>
-                    <div style="flex-basis: 40%">
-                        <h1>WANT TO KNOW MORE?</h1>
-                        <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHBtwoUr9E&#x2F;u-bA4UHge_yx_GK_I02xng&#x2F;view?utm_content=DAHBtwoUr9E&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">
-                            <h2 style="color: var(--fundecor-navy)">CHECK OUT OUR INFORMATIONAL BOOKLET!</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="column-right">
-                <div class="container primary">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="tiertiary container about centered-content flex-column" style="gap: 0.1rem; margin-top: 2rem">
+        <div class="tiertiary container about centered-content flex-column" style="gap: 0rem; margin-top: 2rem">
             <h1>ABOUT OUR EDUCATIONAL TRAVEL EXPERIENCES</h1>
             <p>
                 FUNDECOR, or the
@@ -122,6 +97,33 @@
                 fieldwork that they do everyday to support the people and the environment. FUDECOR offers opportunities for volunteer work and
                 research, as well as interactive classroom settings for professors to teach classes.
             </p>
+        </div>
+
+        <div class="two-column-section">
+            <div class="column-left">
+                <div class="background container flex-row centered-content">
+                    <video loop="false" controls="true">
+                        <source src="static/img/video/promovid2.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="container secondary flex-row" style="gap: 2rem; padding-left: 4rem;">
+                    <div class="remove-on-mobile" style="position: relative; width: 50%; height: auto; padding-top: 60%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                            src="https://www.canva.com/design/DAHBtwoUr9E/u-bA4UHge_yx_GK_I02xng/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                    </div>
+                    <div style="flex-basis: 40%">
+                        <h1>WANT TO KNOW MORE?</h1>
+                        <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHBtwoUr9E&#x2F;u-bA4UHge_yx_GK_I02xng&#x2F;view?utm_content=DAHBtwoUr9E&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">
+                            <h2 style="color: var(--fundecor-navy); text-decoration-color: currentColor">CHECK OUT OUR INFORMATIONAL BOOKLET!</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="primary container">
@@ -158,7 +160,6 @@
                             forest engineer and as a manager. He also focuses on climate change. He works with student groups on sustainable farming
                             and forest management practices.
                         </p>
-                        <p></p>
                     </div>
                 </div>
             </div>
@@ -166,7 +167,7 @@
 
         <div class="container background centered-content flex-row">
             <h1>PAST PARTNERS</h1>
-            <div class="flex-row centered-content" style="flex-wrap: wrap; justify-content: space-around;">
+            <div class="flex-row centered-content" style="flex-wrap: wrap; justify-content: space-around; gap: 1rem; padding: 0vh 3vw;">
                 <img class="logo-image" src="static/img/partners/FIU_Logo.png" alt="Florida International University"  loading="eager"/>
                 <img class="logo-image" src="static/img/partners/wwf_logo.webp" alt="WWF"  loading="eager"/>
                 <img class="logo-image" src="static/img/partners/University_of_Michigan_Logo.webp" alt="University of Michigan"  loading="eager"/>
@@ -261,9 +262,9 @@
             </div>
         </div>
 
-        <div id="applynow" class="container background centered-content flex-row emphasis" style="gap: 3rem; justify-content: space-around">
-            <h1 style="margin-left: 5rem">INTERESTED? TALK TO US TODAY!</h1>
-            <a class="button" style="margin-right: 12rem" href="apply.php"><span class="button-text">CONTACT US</span></a>
+        <div id="applynow" class="container background centered-content flex-row apply-now">
+            <h1>INTERESTED? TALK TO US TODAY!</h1>
+            <a class="button" href="apply.php"><span class="button-text">CONTACT US</span></a>
         </div>
 
         <!-- KEEP THIS AT THE BOTTOM! -->

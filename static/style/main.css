@@ -21,7 +21,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: medium;
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
@@ -61,12 +61,12 @@ h2 {
 }
 
 p {
-    font-size: 16px;
+    font-size: medium;
     font-weight: 600;
     font-family: 'Source Sans 3', sans-serif;
     text-indent: 2em;
     width: fit-content;
-    max-width: 1100spx;
+    max-width: 1200px;
 }
 
 a {
@@ -90,8 +90,17 @@ li {
     left: 0.5rem;
 }
 
-.emphasis {
+.apply-now {
     font-weight: initial + 200;
+    gap: 3rem;
+    justify-content: space-around;
+}
+@media (max-width: 768px) {
+    .apply-now {
+        font-weight: initial + 200;
+        gap: 1rem;
+        justify-content: space-around;
+    }
 }
 
 /* END BASE ELEMENT STYLING */
@@ -119,6 +128,11 @@ li {
 
     padding: 1.5vh 2vw;
     height: 100%;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem; /* Stack vertically on small screens */
+    }
 }
 
 .primary {
@@ -158,7 +172,12 @@ li {
 }
 
 .container h1:first-of-type {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+}
+@media (max-width: 768px) {
+    .container h1:first-of-type {
+        margin-top: 0.5rem;
+    }
 }
 
 .centered-content {
@@ -186,18 +205,36 @@ li {
 
 /* || RANDOM MORE SINGULAR STYLES, i.e. logo image */
 .logo-image {
-    height: 14vh;
-    margin-right: 5rem;
+    height: 7rem;
     padding: 0rem;
 }
-
 .logo {
-    font-size: 42px;
-}
-
-.logo h1 {
+    font-size: 2.5rem; /* 2 rem is xx-large on  default browser settings */
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.logo-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+@media (max-width: 768px) {
+    .logo-image {
+        height: 4rem;
+        padding: 0rem;
+    }
+    .logo {
+        font-size: 1.5rem; /* 2 rem is xx-large on  default browser settings */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 40%;
+    }
+    .logo-container {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        padding: 1rem;
+        gap: 0rem;
+    }
 }
 
 /* Form styling */
@@ -216,17 +253,32 @@ form input {
     /* TODO! This is not set up for mobile */
     max-width: 40vw;
 }
+@media (max-width: 768px) {
+    form input {
+        max-width: 80vw;
+    }
+}
 
 form textarea {
     max-width: 60vw;
     /* For some reason if you don't specify the font here as well it uses the browser fallback one. idk */
     font-family: 'Source Sans 3', sans-serif;
 }
+@media (max-width: 768px) {
+    form textarea {
+        max-width: 80vw;
+    }
+}
 
 form button {
     font-weight: bold;
     max-width: fit-content;
     padding: 0.5vh 1vw;
+}
+@media (max-width: 768px) {
+    form button {
+        padding: 0.7rem 1.3rem;
+    }
 }
 
 /* Meet the team section */
@@ -240,6 +292,14 @@ form button {
     margin-bottom: 2rem;
     gap: 4rem;
 }
+@media (max-width: 768px) {
+    .meet-the-team {
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 
 .meet-the-team h1 {
     color: var(--secondary-color);
@@ -250,6 +310,16 @@ form button {
     width: 50vw;
     max-width: 600px;
 }
+@media (max-width: 768px) {
+    .meet-the-team-info {
+        width: 80vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 .meet-the-team-info p {
     font-size: larger;
@@ -258,6 +328,7 @@ form button {
 .meet-the-team-info h2 {
     font-size: xx-large;
     margin-bottom: 0rem;
+    margin-top: 0rem;
 }
 
 .meet-the-team img {
@@ -266,6 +337,12 @@ form button {
     border-radius: 0.25rem;
     margin-right: 1rem;
     margin-left: 1rem;
+}
+@media (max-width: 768px) {
+    .meet-the-team img {
+        width: 80vw;
+        height: auto;
+    }
 }
 /* End meet the team section */
 /* FAQ section */
@@ -344,9 +421,20 @@ form button {
     padding-left: 6rem;
     padding-right: 6rem;
 }
+@media (max-width: 768px) {
+    .about {
+        padding: 1rem; /* Stack vertically on small screens */
+    }
+}
 
 .about p {
     font-size: large;
+}
+
+@media (max-width: 768px) {
+    .remove-on-mobile {
+        display: none;
+    }
 }
 
 /* END SINGULAR STYLE THINGS */
@@ -376,18 +464,28 @@ form button {
     height: 3rem auto;
     width: 100vw;
 }
+@media (max-width: 768px) {
+    .slideshow-container {
+        gap: 0.5rem;
+    }
+}
 
 .slideshow-container::-webkit-scrollbar {
     display: none;
 }
 
 .slide-wrapper {
-    padding: 0.5rem;
+    padding: 0.75rem;
     background: var(--navy-gradient);
     border-radius: 2rem;
     scroll-snap-align: start;
     flex-shrink: 0;
     /* box-shadow: 0 0 10px oklch(0% 0 0 / 20%); */
+}
+@media (max-width: 768px) {
+    .slide-wrapper {
+        padding: 0.5rem;
+    }
 }
 
 .slide-wrapper:last-child {
@@ -403,6 +501,14 @@ form button {
     border-radius: 1.5rem; /* Slightly smaller than wrapper */
     height: 35rem;
     width: auto;
+}
+@media (max-width: 768px) {
+    .slideshow-card {
+        display: block;
+        border-radius: 1.5rem; /* Slightly smaller than wrapper */
+        height: 12.5rem;
+        width: auto;
+    }
 }
 
 .slideshow-card img {
@@ -509,8 +615,8 @@ form button {
     justify-content: center;
 
     display: flex;
-    width: 1vw;
-    height: 1vw;
+    width: 1rem;
+    height: 1rem;
     margin: none;
 }
 
@@ -527,8 +633,8 @@ form button {
     max-width: 100vw;
     justify-content: center;
     gap: 3vw;
-    padding: 1vw 0vw;
-    margin: none;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
     background-color: var(--primary-color);
 }
