@@ -24,7 +24,7 @@
         <div class="slideshow-container-bounds">
             <div class="slideshow-container">
                 <div id="a0" class="slide-wrapper leftmost-slide">
-                    <img class="slideshow-card" src="static/img/home-slideshow/FUNDECOR_teampic.png" loading="eager" />
+                    <img class="slideshow-card" src="static/img/home-slideshow/FUNDECOR_teampic.webp" loading="eager" />
                 </div>
                 <div id="a1" class="slide-wrapper">
                     <img class="slideshow-card" src="static/img/home-slideshow/fieldwork.jpg" loading="eager" />
