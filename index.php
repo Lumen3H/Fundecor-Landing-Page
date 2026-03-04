@@ -54,15 +54,17 @@
 
         <div class="two-column-section">
             <div class="column-left">
-                <div class="secondary container">
-                    <h1>OFFERINGS</h1>
-                    <ul class="list">
-                        <li><p>Hands-On Experience with Seasoned Professionals</p></li>
-                        <li><p>Venture into the lush rainforests of Costa Rica</p></li>
-                        <li><p>Become immersed in Costa Rica's vibrant culture</p></li>
-                    </ul>
-                    <h1>Already know you're interested?</h1>
-                    <a class="button alt-button-colors" href="apply.php">GO AND APPLY</a>
+                <div class="secondary container centered-content flex-column">
+                    <div style="margin-right: 4rem;">
+                        <h1 style="margin-top:0px;">OFFERINGS</h1>
+                        <ul class="list">
+                            <li><p>Hands-On Experience with Seasoned Professionals</p></li>
+                            <li><p>Venture into the lush rainforests of Costa Rica</p></li>
+                            <li><p>Become immersed in Costa Rica's vibrant culture</p></li>
+                        </ul>
+                        <h1>Already know you're interested?</h1>
+                        <a class="button alt-button-colors" href="apply.php">GO AND APPLY</a>
+                    </div>
                 </div>
             </div>
             <div class="column-right">
@@ -70,6 +72,31 @@
                     <video loop="false" controls="true">
                         <source src="static/img/video/promovid1.mp4" type="video/mp4" />
                     </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="two-column-section">
+            <div class="column-left">
+                <div class="container background flex-row" style="gap: 2rem; padding-left: 4rem;">
+                    <div style="position: relative; width: 50%; height: auto; padding-top: 60%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                            src="https://www.canva.com/design/DAHBtwoUr9E/u-bA4UHge_yx_GK_I02xng/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                    </div>
+                    <div style="flex-basis: 40%">
+                        <h1>WANT TO KNOW MORE?</h1>
+                        <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHBtwoUr9E&#x2F;u-bA4UHge_yx_GK_I02xng&#x2F;view?utm_content=DAHBtwoUr9E&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">
+                            <h2 style="color: var(--fundecor-navy)">CHECK OUT OUR INFORMATIONAL BOOKLET!</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="container primary">
+
                 </div>
             </div>
         </div>
@@ -137,17 +164,21 @@
             </div>
         </div>
 
-        <div class="container tiertiary-bright centered-content flex-row">
+        <div class="container background centered-content flex-row">
             <h1>PAST PARTNERS</h1>
-            <div class="flex-row centered-content" style="flex-wrap: wrap">
-                <img class="logo-image" src="static/img/partners/FIU_Logo.png" alt="Florida International University" />
-                <img class="logo-image" src="static/img/partners/wwf_logo.webp" alt="WWF" />
-                <img class="logo-image" src="static/img/partners/University_of_Michigan_Logo.webp" alt="University of Michigan" />
-                <img class="logo-image" src="static/img/partners/cornell_college_logo.webp" alt="Florida International University" />
-                <img class="logo-image" src="static/img/partners/IUCN.webp" alt="WWF" />
-                <img class="logo-image" src="static/img/partners/university_of_toronto_logo.webp" alt="University of Michigan" />
-                <img class="logo-image" src="static/img/partners/agua-tica.webp" alt="Agua Tica">
-                <img class="logo-image" src="static/img/partners/UNA_logo.webp" alt="UNA">
+            <div class="flex-row centered-content" style="flex-wrap: wrap; justify-content: space-around;">
+                <img class="logo-image" src="static/img/partners/FIU_Logo.png" alt="Florida International University"  loading="eager"/>
+                <img class="logo-image" src="static/img/partners/wwf_logo.webp" alt="WWF"  loading="eager"/>
+                <img class="logo-image" src="static/img/partners/University_of_Michigan_Logo.webp" alt="University of Michigan"  loading="eager"/>
+                <img class="logo-image" src="static/img/partners/cornell_college_logo.webp" alt="Florida International University"  loading="eager"/>
+                <img class="logo-image" src="static/img/partners/IUCN.webp" alt="WWF"  loading="eager"/>
+                <img class="logo-image" src="static/img/partners/university_of_toronto_logo.webp" alt="University of Toronto"  loading="eager"/>
+                <img class="logo-image" src="static/img/partners/UNA_logo.webp" alt="UNA" loading="eager">
+                <img class="logo-image" src="static/img/partners/dole_logo.png" alt="Dole" loading="eager">
+                <img class="logo-image" src="static/img/partners/fonafifo_logo.webp" alt="FONAFIFO" loading="eager">
+                <img class="logo-image" src="static/img/partners/gggi_logo.png" alt="GGGI" loading="eager">
+                <img class="logo-image" src="static/img/partners/MINAE_logo.webp" alt="MINAE" loading="eager">
+                <img class="logo-image" src="static/img/partners/UMinn_logo.png" alt="University of Minnesota" loading="eager">
             </div>
             <p></p>
         </div>
@@ -179,7 +210,8 @@
                     </li>
                     <li>
                         <p>
-                            (See full list of resources)
+                            A team of expert staff, classrooms, housing solutions, authorization to conduct research,
+                            locations in the field for you to explore and work at, and more!
                         </p>
                     </li>
                 </ul>

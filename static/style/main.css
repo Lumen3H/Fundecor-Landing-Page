@@ -66,6 +66,7 @@ p {
     font-family: 'Source Sans 3', sans-serif;
     text-indent: 2em;
     width: fit-content;
+    max-width: 1100spx;
 }
 
 a {
@@ -185,13 +186,18 @@ li {
 
 /* || RANDOM MORE SINGULAR STYLES, i.e. logo image */
 .logo-image {
-    height: 18vh;
+    height: 14vh;
     margin-right: 5rem;
     padding: 0rem;
 }
 
 .logo {
     font-size: 42px;
+}
+
+.logo h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Form styling */
@@ -231,8 +237,8 @@ form button {
     height: fit-content;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 2.25rem;
-    gap: 6rem;
+    margin-bottom: 2rem;
+    gap: 4rem;
 }
 
 .meet-the-team h1 {
@@ -241,7 +247,8 @@ form button {
 }
 
 .meet-the-team-info {
-    max-width: 50vw;
+    width: 50vw;
+    max-width: 600px;
 }
 
 .meet-the-team-info p {
@@ -266,8 +273,8 @@ form button {
     background-color: var(--fundecor-navy);
     position: relative;
 
-    width: 90vw;
-    max-width: 90vw;
+    width: 80vw;
+    max-width: 1200px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0.4rem;
@@ -479,8 +486,8 @@ form button {
 }
 
 .alt-button-colors:active {
-    background-color: var(--primary-color);
-    color: var(--fundecor-navy);
+    background-color: var(--fundecor-navy);
+    color: var(--light-blue);
     border-image: var(--navy-gradient) 1;
 }
 
