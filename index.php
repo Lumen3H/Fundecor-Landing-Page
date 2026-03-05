@@ -154,7 +154,7 @@
                 <div class="container meet-the-team">
                     <img src="static/img/meet-the-team/pedro.jpg" />
                     <div class="flex-column meet-the-team-info">
-                        <h2>PEDRO ZUNIGA</h2>
+                        <h2>PEDRO ZÚÑIGA</h2>
                         <p>
                             Pedro is the manager of Innovation and business at FUNDECOR. He has worked with many of the forestry projects both as a
                             forest engineer and as a manager. He also focuses on climate change. He works with student groups on sustainable farming
